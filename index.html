@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Flappy Bird AI</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css" />
+	</head>
+	<body>
+		<h1>Flappy Bird AI</h1>
+		<p>This is a flappy bird game ai, made completely from scratch, using the base javascript API. Keep it running to see the AI learn, and play along as a red bird (any key to jump), or load a god AI that was trained for ~5 minutes that you cannot beat.</p>
+		<h3>high score:<span id="highscore"></span></h3>
+		<h3>score:<span id="score"></span></h3>
+		<h3>Your Score:<span id="highyou"></span></h3>
+		<h3>gen:<span id="gen">0</span></h3>
+		<button id="god">Load God AI</button>
+		<div id="game">
+		</div>
+		<p>Check out the source code at <a href="#">@neelr/FlappyBirdAI</a></p>
+		<script language="javascript" type="text/javascript" src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+		<script language="javascript" type="text/javascript" src="nn.js"></script>
+		<script language="javascript" type="text/javascript" src="sketch.js"></script>
+		<script language="javascript" type="text/javascript" src="bird.js"></script>
+		<script language="javascript" type="text/javascript" src="pipe.js"></script>
+	</body>
+</html>
