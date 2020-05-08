@@ -19,7 +19,8 @@
  * @method mutate - Mutates and returns a new neural network
  */
 class NN {
-    mutateNumber = () => randomGaussian() * 0.5
+	mutateConst = 0.5
+    mutateNumber = () => randomGaussian() * this.mutateConst
     input = {
         nodes: 0,
     }

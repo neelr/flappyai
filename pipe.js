@@ -23,7 +23,11 @@ function Pipe() {
   };
 
   this.show = function() {
+	  if (this.highlight) {
+		  fill("red")
+	  } else {
     fill("green");
+	  }
     rect(this.x, 0, this.w, this.top);
     rect(this.x, height - this.bottom, this.w, this.bottom);
   };

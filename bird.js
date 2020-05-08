@@ -6,7 +6,7 @@
 function Bird() {
   this.y = height / 2;
   this.x = 64;
-  this.brain = new NN(4,10,2)
+  this.brain = new NN(5,8,2)
   this.gravity = 0.7;
   this.lift = -12;
   this.velocity = 0;
