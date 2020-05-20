@@ -1,8 +1,3 @@
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/cXgA1d_E-jY&
-
 function Pipe() {
   this.spacing = 200;
   this.top = random(height / 6, (3 / 4) * height);
