@@ -1,14 +1,15 @@
-function Pipe() {
-  this.spacing = 200;
-  this.top = random(height / 6, (3 / 4) * height);
-  this.bottom = height - (this.top + this.spacing);
-  this.x = width;
-  this.w = 80;
-  this.speed = 6;
+class Pipe {
+  // Define properties
+  spacing = 200;
+  top = random(height / 6, (3 / 4) * height);
+  bottom = height - (this.top + this.spacing);
+  x = width;
+  w = 80;
+  speed = 6;
+  highlight = false;
 
-  this.highlight = false;
-
-  this.hits = function(bird) {
+  // Check if bird hits this pipe
+  hits (bird) {
     if (bird.y < this.top || bird.y > height - this.bottom) {
       if (bird.x > this.x && bird.x < this.x + this.w) {
         return true;
@@ -17,7 +18,8 @@ function Pipe() {
     return false;
   };
 
-  this.show = function() {
+  // Render pipe
+  show () {
 	  if (this.highlight) {
 		  fill("red")
 	  } else {
@@ -27,11 +29,13 @@ function Pipe() {
     rect(this.x, height - this.bottom, this.w, this.bottom);
   };
 
-  this.update = function() {
+  // Update pipe location
+  update () {
     this.x -= this.speed;
   };
 
-  this.offscreen = function() {
+  // Check if pipe is offscreen
+  offscreen () {
     if (this.x < -this.w) {
       return true;
     } else {

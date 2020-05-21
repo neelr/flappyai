@@ -1,3 +1,5 @@
+// Documented heavily because this is main part of project
+
 /**
  * A basic neural network class for the Core JS Library
  * @property {object} input - An object to hold the input nodes
@@ -20,6 +22,7 @@
  */
 class NN {
 	mutateConst = 0.5
+	// Specifically Gaussian so mutations have a rate of mutation like in nature
     mutateNumber = () => randomGaussian() * this.mutateConst
     input = {
         nodes: 0,
